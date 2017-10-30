@@ -4,29 +4,35 @@
     <title>Test Page: Don't Panic</title>
     <meta charset="utf-8">
     <style type="text/css">
-      #exec-bio {
-        background-color: lightgray;
+      /* GLOBAL STYLES */
+      a {
+        color: red;
       }
-      #blackbox {
-        background-color: black;
+      h2 {
+        font-size: 30px;
+      }
+
+      /* BIO-BOX STYLES */
+      .bio-wrapper{
+        width: 500px;
       }
       .bio-box {
-        border: 1px solid black
+        border: 1px solid black;
+        font-size: 1em;
+        width: 50%;
+        padding: 2.5em;
       }
       .bio-box a {
         color: green;
       }
-      .secondary-box {
-        background-color: azure;
+      .bio-copy {
+        font-size: 1em;
       }
-      a {
-        color: red;
-      }
-      li {
-        border: 1px dashed black;
-      }
-      li a {
-        color: orange;
+
+      /* EXAMPLE STYLES */
+      .example-link {
+        background: rgba(200, 200, 200, 0.5);
+        color: teal;
       }
     </style>
   </head>
@@ -34,9 +40,11 @@
 
 
   <body>
+
     <h1>I'm an h1</h1>
+
     <ul>
-      <li id="blackbox">
+      <li class="blackbox">
         <a href="http://example.com/">Link</a>
       </li>
       <li>
@@ -46,18 +54,39 @@
         <a href="http://example.com/">Link</a>
       </li>
     </ul>
+
     <h2>I'm an h2</h2>
-    <div id="exec-bio" class="bio-box">
-      <a href="http://example.com/">I'm a link</a>
+
+    <div class="bio-wrapper">
+      <div class="bio-box">
+        <h3>PBW</h3>
+        <a href="http://example.com/" class="example-link">I'm a link</a>
+        <p class="bio-copy">
+          A dude, a bro, but not a dude-bro.
+        </p>
+      </div>
+      <div class="bio-box">
+        <h3>YC</h3>
+        <a href="http://example.com/" class="example-link">I'm a link</a>
+        <p class="bio-copy">
+          Steady-eady-eady.
+        </p>
+      </div>
+      <div class="bio-box">
+        <h3>TBD</h3>
+        <a href="http://example.com/" class="example-link">I'm a link</a>
+        <p class="bio-copy">
+          Stay tuned...
+        </p>
+      </div>
+      <div class="bio-box">
+        <h3>???</h3>
+        <a href="http://example.com/" class="example-link">I'm a link</a>
+        <p class="bio-copy">
+          We're really not looking this far ahead.
+        </p>
+      </div>
     </div>
-    <div class="bio-box secondary-box">
-      <a href="http://example.com/">I'm a link</a>
-    </div>
-    <div class="bio-box">
-      <a href="http://example.com/">I'm a link</a>
-    </div>
-    <div class="bio-box">
-      <a href="http://example.com/">I'm a link</a>
-    </div>
+
   </body>
 </html>
